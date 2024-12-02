@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastrecord"
+version = "0.1.0"
+description = "A Rails-like ORM for FastAPI using SQLModel"
+authors = ["Tushar Mangukiya <tushar.m@innovalabs.tech>"]
+readme = "README.md"
+packages = [{ include = "fastrecord" }]
+license = "MIT"
+keywords = ["fastapi", "orm", "database", "sqlmodel", "rails"]
+repository = "https://github.com/innovalabs-tech/fastrecord"
+homepage = "https://github.com/innovalabs-tech/fastrecord#readme"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.115.5"
+sqlmodel = "^0.0.22"
+redis = { extras = ["hiredis"], version = "^5.2.0" }
+inflect = "^7.4.0"
+pydantic-settings = "^2.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
